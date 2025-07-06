@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         /* Remove a margem padrão da página */
+        body       {
+            margin: 0;
+        }
+
+        /* Define layout em linha para os elementos com a classe 'container' */
+                .container {
+            display: flex;
+        }
+        /* Estilo do título do cabeçalho */
+        .titulo {
+            display: grid;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            text-align: center;
+        }
+
+        /* Define a posição do header no grid */
+        header {
+            grid-column-start: 1;
+            grid-column-end: 12;
+            grid-row-start: 1;
+            grid-row-end: 1;
+        }
+
+          /* Estilo do menu de navegação */
+        .menu {
+            padding-top: 30px;
+            justify-content: center;
+            gap: 20px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+          /* Estilo visual do cabeçalho */
+        header {
+            background-color: #02006b;
+            
+        }
+
+        /* Remove os marcadores da lista e define cor dos links */
+        ul {
+            list-style-type: none;
+
+            color: #0051ff;
+        }
+
+        /* Estilo básico dos links */
+        a,
+        a:link {
+            text-decoration: none;
+            padding: 8px 16px;
+            border: solid #0051ff 2px;
+        }
+
+        /* Alinha os itens da lista lado a lado */
+        li {
+            float: left;
+        }
+
+        /* Estilo ao passar o mouse sobre os links */
+        a:hover {
+            background-color: #0051ff;
+            color: white;
+        }
+        
+        /* media query para dispositivos móveis */
+        @media only screen and (max-width: 767px) {
+            .wrapper {
+               grid-column-start: 1;
+                grid-column-end: 1;
+
+            }
+
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Menu Navegação -->
+    <header class="container titulo">
+        <h1 style="color: aliceblue; "> Meu curriculo</h1>
+    </header>
+    <nav class="container menu">
+        <ul >
+            <li><a href="sobremim.html">Sobre Mim</a></li>
+            <li><a href="formaçao.html">Minhas formações</a></li>
+            <li><a href= "index.html">Portfolio</a></li>
+            <li><a href= "contatos.html">Entre em Contato</a></li>
+        </ul>
+        <nav class="container menu">
+    </nav>

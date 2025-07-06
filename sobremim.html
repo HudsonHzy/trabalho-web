@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         /* Remove a margem padrão da página */
+        body       {
+            margin: 0;
+        }
+         /* Define layout em linha para os elementos com a classe 'container' */
+
+                .container {
+            display: flex;
+        }
+        /* Estilo do título do cabeçalho */
+        .titulo {
+            display: grid;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            text-align: center;
+        }
+
+        /* Define posição do header em layout com grid */
+        header {
+            grid-column-start: 1;
+            grid-column-end: 12;
+            grid-row-start: 1;
+            grid-row-end: 1;
+        }
+
+        /* Estilo do menu de navegação lateral */
+        .menu {
+            padding-bottom: 250px;
+            padding-top: 50px;
+            justify-content: center;
+            gap: 20px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+         /* Área de texto principal (conteúdo da página) */
+        .principal {
+            grid-column-start: 4;
+            grid-column-end: 12;
+            padding-left: 15px;
+            padding-right: 15px;
+            text-align: justify;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 10;
+        }
+
+          /* Cor de fundo do cabeçalho */
+        header {
+            background-color: #000000;
+            
+        }
+
+         /* Remove marcadores da lista e define cor dos links */
+        ul {
+            list-style-type: none;
+
+            color: #0051ff;
+        }
+
+        
+    /* Estilo padrão dos links */
+        a,
+        a:link {
+            text-decoration: none;
+            padding: 8px 16px;
+            border: solid #000000 2px;
+        }
+
+         /* Alinha itens da lista horizontalmente */
+
+        li {
+            float: left;
+        }
+
+         /* Estilo ao passar o mouse sobre os links */
+        a:hover {
+            background-color: #0051ff;
+            color: white;
+        }
+
+          /* Estilo da foto*/
+        .foto_minha{
+            gap: 25px;
+            display: flex;
+            grid-column-start: 1;
+            grid-column-end: 1;
+        }
+          /* Estilo do texto descritivo da seção "Sobre mim" */
+        .texto_sobremim{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: #000000;
+            font-size: 19px;
+        }
+           /* Rodapé da página */
+        .footer{
+             display: grid;
+        background-color: black;
+        color: white;
+        text-align: center;
+        padding: 10px 0;
+        bottom: 0;
+        width: 100%;
+        font-weight: bold;
+        }
+        /* media query para dispositivos móveis */
+        @media only screen and (max-width: 767px) {
+            .wrapper {
+               grid-column-start: 1;
+                grid-column-end: 1;
+
+            }
+
+        }
+
+    </style>
+</head>
+<!-- Descrição sobre mim -->
+<body>
+     <header class="container titulo">
+        <h1 style="color: aliceblue;"> Sobre mim </h1>
+         </header>
+         <section class="principal" >
+        <h2> Hudson Fabiano de Queiroz Pires</h2>
+                         <div class="container wrapper">
+        <aside class="foto_minha">
+            <img src="Fotos/foto.jpg" height="280px">
+            <section class="texto_sobremim"> 
+        <p > Olá, meu nome é Hudson, tenho 19 anos e atualmente resido no município de Contagem, em Minas Gerais.<br>
+        Concluí o ensino médio em 2023, e no mesmo ano iniciei um curso técnico em Informática, onde tive a oportunidade <br> de aprender fundamentos importantes da área de tecnologia. No entanto, precisei interromper o curso em 2024 por motivos pessoais.<br>
+        Atualmente, estou cursando a graduação em Análise e Desenvolvimento de Sistemas pela Uninter, onde venho me dedicando aos estudos <br> e ampliando meus conhecimentos em programação.
+        Tenho grande interesse em atuar no setor de tecnologia e estou em busca de uma <br> oportunidade de emprego ou estágio que me permita aplicar, na prática, os conhecimentos adquiridos, além de continuar aprendendo e <br> evoluindo profissionalmente. Estou motivado a contribuir com responsabilidade, proatividade e vontade de crescer dentro da área.<br>
+        Nas minhas horas vagas, gosto de jogar videogame. Jogo desde títulos competitivos, como Valorant, até experiências mais calmas e focadas <br> em história, como Expedition 33, lançado este ano.<br> <br>
+        Logo abaixo, você encontrará os links para acessar meu portfólio, além dos meus contatos e informações sobre minha formação.
+        </p>
+             </section>
+    </section>
+    <!-- Menu Navegação -->
+    <nav class="container menu">
+        <ul>
+            <li><a href="formaçao.html">Minhas formações</a></li>
+            <li><a href= "index.html">Portfolio</a></li>
+            <li><a href= "contatos.html">Entre em Contato</a></li>
+            <li><a href= "paginainicial.html">Voltar Para o Inicio</a></li>
+        </ul>
+    </nav>
+    <footer class="container footer">
+        <h1>Desenvolvido para fins educacionais</h1>
+    </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minhas Formações</title>
+    <style>
+        /* Remove a margem padrão da página */
+        body {
+            margin: 0;
+            font-family: 'Lucida Sans', Verdana, sans-serif;
+            background-color: #f5f7fa;
+            color: #333;
+        }
+
+        /* Menu de navegação */
+        .container {
+            display: flex;
+        }
+
+         /* Estilo do menu de navegação */
+        .menu {
+            padding-bottom: 34px;
+            padding-top: 13px;
+            justify-content: center;
+            gap: 20px;
+            font-family: 'Lucida Sans', Verdana, sans-serif;
+        }
+
+         /* Cabeçalho da página */
+        header {
+            background-color: #000000;
+            padding: 20px;
+            color: white;
+            text-align: center;
+        }
+
+         /* Remove os marcadores da lista e define cor dos links */
+        ul {
+            list-style-type: none;
+            color: #0051ff;
+        }
+
+         /* Alinha os itens da lista lado a lado */
+        li {float: left;
+            
+        }
+
+         /* Estilo ao passar o mouse sobre os links */
+        a,
+        a:link {
+            text-decoration: none;
+            padding: 8px 16px;
+            border: solid #000000 2px;
+        }
+
+         /* Estilo individual de cada formação */
+        a:hover {
+            background-color: #0051ff;
+            color: white;
+        }
+
+        /* Conteúdo principal */
+        .formacoes-container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .formacao {
+            background-color: white;
+            padding: 15px 20px;
+            border-left: 5px solid #000000;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+
+          /* Título da formação */
+        .formacao h2 {
+            margin: 0 0 5px;
+            font-size: 20px;
+        }
+
+        /* Descrição da formação */
+        .formacao p {
+            margin: 5px 0;
+            font-size: 16px;
+        }
+
+        /* Linha divisória entre seções */
+        hr {
+            margin: 40px 0 20px;
+            border: none;
+            border-top: 2px solid #ccc;
+        }
+
+        /* Responsividade para telas pequenas */
+        @media only screen and (max-width: 767px) {
+            .wrapper {
+                grid-column-start: 1;
+                grid-column-end: 1;
+            }
+
+             /* Organiza o menu em coluna */
+            .menu ul {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding-left: 0;
+            }
+
+        }
+        /* Rodape da pagina */
+        .footer{
+             display: grid;
+        background-color: black;
+        color: white;
+        text-align: center;
+        padding: 5px 0;
+        bottom: 0;
+        width: 100%;
+        font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Cabeçalho da página -->
+    <header>
+        <h1>Minhas Formações</h1>
+    </header>
+
+    <!-- Formações -->
+    <div class="formacoes-container">
+        <p>Conheça um pouco da minha trajetória acadêmica e técnica.</p>
+
+        <div class="formacao">
+            <h2>Ensino Medio</h2>
+            <p><strong>Instituição:</strong> Estadual</p>
+            <p><strong>Início:</strong> 2012  <strong>Conclusão:</strong> 2023</p>
+        </div>
+
+        <div class="formacao">
+            <h2>Curso Tecnico em Informática</h2>
+            <p><strong>Instituição</strong> Grau Tecnico</p>
+            <p><strong>Status:</strong> Intemrrompido com 1 ano</p>
+        </div>
+
+        <div class="formacao">
+            <h2>Analise e desenvolvimento de Sistemas</h2>
+            <p><strong>Instituiçao:</strong> Uninter</p>
+            <p><strong>Status:</strong> Em andamento</p>
+        </div>
+
+        <hr>
+
+        <div class="formacao">
+            <h2>Planos Futuros</h2>
+            <p>Pretendo me aprofundar em desenvolvimento, com foco em front-end e, futuramente, me tornar full stack. Também tenho interesse em cursos de montagem e desmontagem de computadores, para meu uso pessoal.</p>
+        </div>
+    </div>
+
+    <!-- Menu de navegaçao -->
+     <nav class="container menu">
+        <ul>
+            <li><a href="sobremim.html">Sobre Mim</a></li>
+            <li><a href="paginainicial.html">Voltar para o inicio</a></li>
+            <li><a href="index.html">Portfólio</a></li>
+            <li><a href="contatos.html">Entre em Contato</a></li>
+        </ul>
+    </nav>
+    <!-- Rodape da página -->
+<footer class="container footer">
+        <h1>Desenvolvido para fins educacionais</h1>
+    </footer>
+</body>
+</html>

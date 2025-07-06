@@ -1,0 +1,165 @@
+
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Configurações básicas da página -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* Remove a margem padrão da página */
+        body {
+            margin: 0;
+        }
+
+        /* Define layout em linha para os elementos com a classe 'container' */
+        .container {
+            display: flex;
+        }
+
+        /* Estilo do menu de navegação */
+        .menu {
+            padding-bottom: 280px;
+            padding-top: 50px;
+            justify-content: center;
+            gap: 20px;
+            font-family: 'Lucida Sans', sans-serif;
+        }
+
+        /* Estilo do título do cabeçalho */
+        .titulo {
+            display: grid;
+            font-family: 'Lucida Sans', sans-serif;
+            text-align: center;
+        }
+
+        /* Campos do formulário */
+        .formulario {
+            padding: 10px; 
+            border-radius: 5px; 
+            border: none; 
+            box-sizing: border-box; 
+            width: 100%;
+        }
+
+        /* Layout do formulário */
+        .form {
+            display: flex; 
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        /* Estilo da seção que contém o formulário */
+        .fundo_contatos {
+            width: 100%;
+            max-width: 500px;
+            background: #000;
+            padding: 20px;
+            border-radius: 10px;
+            box-sizing: border-box;
+        }
+
+        /* Botão de envio do formulário */
+        .botao {
+            padding: 10px; 
+            border-radius: 5px;
+            border: none;
+            background-color: #ffffff;
+            color: rgb(0, 0, 0); 
+            cursor: pointer;
+        }
+
+        /* Cabeçalho da pagina */
+        header {
+            background-color: #000000;
+        }
+
+        /* Remove os marcadores da lista e define cor dos links */
+        ul {
+            list-style-type: none;
+            color: #0051ff;
+        }
+
+        /* Estilo básico dos links */
+        a,
+        a:link {
+            text-decoration: none;
+            padding: 8px 16px;
+            border: solid #000000 2px;
+        }
+
+        /* Alinha os itens da lista lado a lado */
+        li {
+            float: left;
+        }
+
+        /* Estilo ao passar o mouse sobre os links */
+        a:hover {
+            background-color: #0051ff;
+            color: white;
+        }
+
+        /* Responsividade para telas pequenas */
+        @media only screen and (max-width: 767px) {
+            .wrapper {
+                grid-column-start: 1;
+                grid-column-end: 1;
+            }
+        }
+
+        /* Rodape da pagina */
+        .footer {
+            display: grid;
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 5px 0;
+            bottom: 0;
+            width: 100%;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- cabeçalho com titulo -->
+    <header class="container titulo">
+        <h1 style="color: aliceblue;">Contato</h1>
+    </header>
+
+    <!-- Conteudo principal com o formulario centralizado -->
+    <main style="display: flex; justify-content: center; padding: 30px;">
+        <section class="fundo_contatos">
+            <h2 style="color: white; text-align: center;">Entre em Contato</h2>
+            <form class="form">
+                <!-- Campo para nome -->
+                <input class="formulario" type="text" name="nome" placeholder="Digite seu nome">
+                <!-- campo para email -->
+                <input class="formulario" type="email" name="email" placeholder="Digite seu email">
+                <!-- campo para mensagem -->
+                <textarea class="formulario" name="mensagem" rows="5" placeholder="Digite sua mensagem"></textarea>
+                <!-- botao para enviar o formulario -->
+                <button class="botao" type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Menu de navegaçao -->
+    <nav class="container menu">
+        <ul>
+            <li><a href="formaçao.html">Minhas formações</a></li>
+            <li><a href="index.html">Portfolio</a></li>
+            <li><a href="sobremim.html">Sobre mim</a></li>
+            <li><a href="paginainicial.html">Voltar Para o Inicio</a></li>
+        </ul>
+    </nav>
+
+    <!-- Rodape da página -->
+    <footer class="container footer">
+        <h1>Desenvolvido para fins educacionais</h1>
+    </footer>
+</body>
+</html>
+
