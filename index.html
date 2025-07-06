@@ -1,118 +1,96 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-   <meta http-equiv="refresh" content="0; url=paginainicial.html">
-    <title>TecnoLógica - Tudo sobre tecnologia</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         /* Remove a margem padrão da página */
+        body       {
+            margin: 0;
+        }
 
-    <link rel="stylesheet" href="style.css">
+        /* Define layout em linha para os elementos com a classe 'container' */
+                .container {
+            display: flex;
+        }
+        /* Estilo do título do cabeçalho */
+        .titulo {
+            display: grid;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            text-align: center;
+        }
+
+        /* Define a posição do header no grid */
+        header {
+            grid-column-start: 1;
+            grid-column-end: 12;
+            grid-row-start: 1;
+            grid-row-end: 1;
+        }
+
+          /* Estilo do menu de navegação */
+        .menu {
+            padding-top: 30px;
+            justify-content: center;
+            gap: 20px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+          /* Estilo visual do cabeçalho */
+        header {
+            background-color: #02006b;
+            
+        }
+
+        /* Remove os marcadores da lista e define cor dos links */
+        ul {
+            list-style-type: none;
+
+            color: #0051ff;
+        }
+
+        /* Estilo básico dos links */
+        a,
+        a:link {
+            text-decoration: none;
+            padding: 8px 16px;
+            border: solid #0051ff 2px;
+        }
+
+        /* Alinha os itens da lista lado a lado */
+        li {
+            float: left;
+        }
+
+        /* Estilo ao passar o mouse sobre os links */
+        a:hover {
+            background-color: #0051ff;
+            color: white;
+        }
+        
+        /* media query para dispositivos móveis */
+        @media only screen and (max-width: 767px) {
+            .wrapper {
+               grid-column-start: 1;
+                grid-column-end: 1;
+
+            }
+
+        }
+
+    </style>
 </head>
-
 <body>
-
-    <div id="header">
-
-        <div id="logo">
-            <h1> <span class="black">Noticias</span> <span class="white">Valorant</span></h1>
-        </div>
-    
-        <div class="menu" >
-            <a href="paginainicial.html">Voltar Para Pagina inicial</a>
-        </div>
-
-    </div>
-
-    <div id="content">
-
-        <div id="posts">
-
-            
-            <div class="post">
-                <h2>Nova Lineup inclusiva da MIBR</h2>
-                <span class="data-post">postado 23 de Junho de 2025</span>
-                <img class="img-post" src="mibrfem.png">
-                <p>
-                <br>Nesta segunda-feira (23), o MIBR revelou sua nova line-up inclusiva de VALORANT para o restante da temporada 2025.<br> A equipe chega reformulada, apostando em nomes de peso do cenário competitivo: bstrdd, vinda da Team Liquid, e Lissa, ex-LOUD.<br> Outra novidade é a volta de Sayuri ao time principal, desta vez liderando o elenco dentro do servidor como IGL.
-
-                </p>
-
-                </p>
-
-                <p><br>Fonte: <a href= https://valorantzone.gg target="_blank">ValorantZone</a></p>
-                <a href=""></a>
-                <a href=""></a>
-            </div>
-            
-
-            
-            <div class="post">
-                <h2>Novo time da Loud </h2>
-                <span class="data-post">postado 24 de Junho de 2025</span>
-                <img class="img-post" src="novaloud.png">
-                <p>
-                   <br>Confira os novos nomes que chegam à LOUD!<br>
-
-A equipe se reforça para o segundo split do VCT Américas 2025 com duas adições internacionais de peso.<br>
-Virtyy, um duelista com passagens marcantes por FUSION, Oxygen Academy e E-Xolos LAZER, já é conhecido no <br> cenário LATAM. Ele revelou que entende bem o português e está confiante para se adaptar rapidamente à comunicação da equipe.<br>
-RobbieBk chega com bagagem como IGL da Gentle Mates, onde atuou até março deste ano na região EMEA.<br> Com histórico por equipes de Portugal, Itália, Finlândia e Reino Unido, essa será a sua primeira experiência jogando fora da Europa.<br>
-</p>
-
-                <p><br>Fonte: <a href= https://maisesports.com.br target="_blank">Mais Esports</a></p>
-                <a href=""></a>
-
-                </p>
-                <a href=""></a>
-            </div>
-
-            <div class="post">
-                <h2>Diretoria o novo time de Dgzin</h2>
-                <span class="data-post">postado 22 de Maio de 2025</span>
-                <img class="img-post" src="dgzin.png">
-                <p>
-                <br>
-Nova equipe chega para disputar a segunda etapa do VCB 2025 de VALORANT: a DIRETORIA. <br> A organização assume o lugar da antiga Vila do Zana e promete agitar o cenário com um elenco experiente, composto por nomes que já passaram pelo VCT Americas nos últimos anos.<br>
-
- Do elenco anterior, kon4n segue como capitão, enquanto os reforços incluem dgzin, havoc, raafa e PxS, todos com passagens recentes por equipes de destaque no cenário, como FURIA, LOUD e 2Game.<br>
-
-                </p>
-
-                <p><br>Fonte: <a href= https://maisesports.com.br target="_blank">Mais Esports</a></p>
-                <a href=""></a>
-            </div>
-           
-
-        </div>
-    
-        <div id="right-side">
-
-            <div class="content-right">
-                <h3>Novas Noticias</h3>
-
-                <div class="post-right" style="border-bottom: 1px solid #000000; padding-bottom: 10px; margin-bottom: 10px;">
-
-                    <p><br>Coleção Proteção Fásica ja disponivel no Valorant</p>
-                    <img class="minipost" src="coleçao.png">
-                    <a href="">Veja mais detalhes</a>
-                </div>
-
-                <div class="post-right" style="border-bottom: none;">
-                    <p>Paper Rex Vence Masters Toronto </p>
-                    <img class="minipost" src="paper.jpg">
-                    <a href="">Veja mais detalhes</a>
-                </div>
-                
-
-            </div>
-
-
-        </div>
-
-        <div id="footer">
-            Para Fins educacionais
-        </div>
-
-    </div>
-</body>
-
-</html>
+    <!-- Menu Navegação -->
+    <header class="container titulo">
+        <h1 style="color: aliceblue; "> Meu curriculo</h1>
+    </header>
+    <nav class="container menu">
+        <ul >
+            <li><a href="sobremim.html">Sobre Mim</a></li>
+            <li><a href="formaçao.html">Minhas formações</a></li>
+            <li><a href= "index.html">Portfolio</a></li>
+            <li><a href= "contatos.html">Entre em Contato</a></li>
+        </ul>
+        <nav class="container menu">
